@@ -1,0 +1,3 @@
+.aws
+.terraform
+terraform.tfstate*
