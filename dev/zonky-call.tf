@@ -43,10 +43,12 @@ data "aws_iam_policy_document" "zonky_call" {
       "logs:CreateLogGroup",
       "logs:CreateLogStream",
       "logs:PutLogEvents",
+      "sns:Publish",
     ]
 
     resources = [
       "arn:aws:logs:*:*:*",
+      "arn:aws:sns:*:*:*",
     ]
   }
 }
